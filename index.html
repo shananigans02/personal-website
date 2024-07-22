@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--unicode encoding to translate our lang to computerspeak-->
+    <meta charset="utf-8"> 
+    <!--adjust to width of device and set at 1, not zoomed in/out-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="personal blog about life, adventures, and projects">
+    <meta name="keywords" content="blog, personal website, personal project, life, adventure"
+    <meta name="author" content="sana">
+    <title>shananigans</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- pop-up overlay -->
+    <div id="overlay">
+        <div>
+            <p> 
+                ☆ once upon a time, shanz was born...☆
+            
+            </p>
+            <button onclick="hideOverlay()">timeskip 21 years?</button>
+        </div>
+    </div>
+
+    <!-- main content -->
+        <div class="profile" id="mainContent" style="display: none;">
+            <main>
+                <section>
+                    <p>character stats</p>
+                    <hr>
+                    <p> (nick)name: shanz </p>
+                    <p> roots: ~ 44% china,  56% canada </p>
+                    <p> birthday: same as taylor swift's</p>
+                    <p> status: unsatisified grad. 
+                    <hr>
+                </section>
+
+                <section>
+                    <details open>
+                        <summary> main quests </summary>
+                        <ul>
+                            <li><label><input type="checkbox" checked disabled/> graduate college </label></li>
+                            <li><label><input type="checkbox" disabled/> improve coding skills... by coding... </label></li>
+                            <ul>
+                                <li><label><input type="checkbox" checked disabled/> make pokemon game </label></li>
+                            <li><label><input type="checkbox" disabled/> make pomodoro tracker </label></li>
+                            </ul>
+                            <li><label><input type="checkbox" disabled/> start adult job in september </label></li>
+
+                        </ul>
+                    </details>
+                    <details open>
+                        <summary> side quests</summary>
+                        <ul>
+                            <li><label><input type="checkbox" checked disabled/> run a half marathon </label></li>
+                            <li><label><input type="checkbox" checked disabled/> fracture ankle (rip training plans for 3 months) </a></label></li>
+                            <li><label><input type="checkbox" checked disabled/> make (this) website </label></li>
+                            <li><label><input type="checkbox" disabled/> read a book a week</label></li>
+                            <li><label><input type="checkbox" disabled/> visit every country (8/195, 4%) </label></li>
+                            <li><label><input type="checkbox" disabled/> run a marathon </label></li>
+                        </ul>
+                    </details>
+                </section>
+            </main>
+
+            <footer>
+                <hr>
+                <p> 
+                    links: 
+                    <a href = "https://x.com/sha19273" target="blank"> x </a> 
+                    | <a href = "https://www.goodreads.com/user/show/178790854-shananigans" target="blank"> goodreads </a> 
+                </p>
+            </footer>
+        </div>
+            
+        <script>
+            // hide overlay, show main content
+            function hideOverlay() {
+                    const overlay = document.getElementById('overlay');
+                    const mainContent = document.getElementById('mainContent');
+                    const body = document.body;
+
+                    overlay.querySelector('div').classList.add('fade-out-text');
+                    overlay.classList.add('fade-out', 'fade-out-background');
+                    mainContent.classList.add('visible');
+                    mainContent.style.display = 'block';
+
+                    setTimeout(() => {
+                        body.style.backgroundColor = 'rgba(247, 243, 205, 0.944)';
+                        overlay.style.display = 'none';    
+                    }, 2000); // 2 secnods
+            }
+        </script>
+</body>
+</html>

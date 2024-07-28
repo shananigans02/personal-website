@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--unicode encoding to translate our lang to computerspeak-->
     <meta charset="utf-8"> 
-    <!--adjust to width of device and set at 1, not zoomed in/out-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="personal blog about life, adventures, and projects">
-    <meta name="keywords" content="blog, personal website, personal project, life, adventure"
+    <meta name="keywords" content="blog, personal website, personal project, life, adventure">
     <meta name="author" content="sana">
     <title>shananigans</title>
     <link rel="stylesheet" href="style.css">
@@ -15,82 +13,89 @@
     <!-- pop-up overlay -->
     <div id="overlay">
         <div>
-            <p> 
-                ☆ once upon a time, shanz was born...☆
-            
-            </p>
+            <p> ☆ once upon a time, shanz was born...☆ </p>
             <button onclick="hideOverlay()">timeskip 21 years?</button>
         </div>
     </div>
 
     <!-- main content -->
-        <div class="profile" id="mainContent" style="display: none;">
-            <main>
-                <section>
-                    <p>character stats</p>
-                    <hr>
-                    <p> (nick)name: shanz </p>
-                    <p> roots: ~ 44% china,  56% canada </p>
-                    <p> birthday: same as taylor swift's</p>
-                    <p> status: unsatisified grad. 
-                    <hr>
-                </section>
-
-                <section>
-                    <details open>
-                        <summary> main quests </summary>
-                        <ul>
-                            <li><label><input type="checkbox" checked disabled/> graduate college </label></li>
-                            <li><label><input type="checkbox" disabled/> improve coding skills... by coding... </label></li>
-                            <ul>
-                                <li><label><input type="checkbox" checked disabled/> make pokemon game </label></li>
-                            <li><label><input type="checkbox" disabled/> make pomodoro tracker </label></li>
-                            </ul>
-                            <li><label><input type="checkbox" disabled/> start adult job in september </label></li>
-
-                        </ul>
-                    </details>
-                    <details open>
-                        <summary> side quests</summary>
-                        <ul>
-                            <li><label><input type="checkbox" checked disabled/> run a half marathon </label></li>
-                            <li><label><input type="checkbox" checked disabled/> fracture ankle (rip training plans for 3 months) </a></label></li>
-                            <li><label><input type="checkbox" checked disabled/> make (this) website </label></li>
-                            <li><label><input type="checkbox" disabled/> read a book a week</label></li>
-                            <li><label><input type="checkbox" disabled/> visit every country (8/195, 4%) </label></li>
-                            <li><label><input type="checkbox" disabled/> run a marathon </label></li>
-                        </ul>
-                    </details>
-                </section>
-            </main>
-
-            <footer>
+    <div class="profile" id="mainContent">
+        <main>
+            <section>
+                <p>character stats</p>
                 <hr>
-                <p> 
-                    links: 
-                    <a href = "https://x.com/sha19273" target="blank"> x </a> 
-                    | <a href = "https://www.goodreads.com/user/show/178790854-shananigans" target="blank"> goodreads </a> 
-                </p>
-            </footer>
-        </div>
+                <p> (nick)name: shanz </p>
+                <p> roots: ~ 50-50 china + canada </p>
+                <p> birthday: same as taylor swift's</p>
+                <p> fav haikyuu character: hinata </p>
+                <p> fav vegetable: sweet potato </p>
+                <p> go-to comfort song: anything by li ronghao / zion t</p>
+                <p> status: unsatisified college grad </p>
+                <p> site: under construction </p>
+                <hr>
+            </section>
+
+            <section>
+                <details open>
+                    <summary> main quests </summary>
+                    <ul>
+                        <li><label><input type="checkbox" checked disabled/> graduate college (5.20.2024) </label></li>
+                        <li><label><input type="checkbox" disabled/> learn coding... by coding... </label></li>
+                        <ul>
+                            <li><label><input type="checkbox" checked disabled/> make a simple pokemon game (6.24.2024) </label></li>
+                            <li><label><input type="checkbox" disabled/> make a more useful pomodoro tracker (ongoing) </label></li>
+                            <li><label><input type="checkbox" disabled/> make a personal netflix clone (ongoing) </label></li>
+                        </ul>
+                        <li><label><input type="checkbox" disabled/> start adult job in sept </label></li>
+                    </ul>
+                </details>
+                <details open>
+                    <summary> side quests</summary>
+                    <ul>
+                        <li><label><input type="checkbox" checked disabled/> run a half marathon (3.24.2024) </label></li>
+                        <li><label><input type="checkbox" checked disabled/> fracture ankle (5.3.2024) </label></li>
+                        <li><label><input type="checkbox" checked disabled/> make (this) personal website (7.22.2024) </label></li>
+                        <li><label><input type="checkbox" checked disabled /> make a blog (7.23.2024) </label></li>
+                        <li><label><input type="checkbox" disabled/> read a book/wk - 8 books in (5.24.2024 - present, 8 wks)</label></li>
+                        <li><label><input type="checkbox" disabled/> visit every country (8/195, 4%) </label></li>
+                        <li><label><input type="checkbox" disabled/> run a marathon (date tbd, aiming for 2025) </label></li>
+                    </ul>
+                </details>
+            </section>
+        </main>
+
+        <footer>
+            <hr>
+            <p> 
+                links: 
+                <a href="https://x.com/sha19273" target="blank"> x </a>
+                <a href="https://www.goodreads.com/user/show/178790854-shananigans" target="blank"> goodreads </a>
+                <a href="https://shananigans.bearblog.dev/" target="blank"> bear </a>
+                <a href="https://github.com/shananigans02" target="blank"> github </a>
+            </p>
+        </footer>
+    </div>
             
-        <script>
-            // hide overlay, show main content
-            function hideOverlay() {
-                    const overlay = document.getElementById('overlay');
-                    const mainContent = document.getElementById('mainContent');
-                    const body = document.body;
+    <script>
+        // hide overlay, show main content
+        function hideOverlay() {
+            const overlay = document.getElementById('overlay');
+            const mainContent = document.getElementById('mainContent');
+            const body = document.body;
 
-                    overlay.querySelector('div').classList.add('fade-out-text');
-                    overlay.classList.add('fade-out', 'fade-out-background');
-                    mainContent.classList.add('visible');
-                    mainContent.style.display = 'block';
+            overlay.style.transition = 'opacity 2s';
+            overlay.style.opacity = '0';
+            
+            mainContent.style.transition = 'opacity 2s';
+            mainContent.style.opacity = '1';
 
-                    setTimeout(() => {
-                        body.style.backgroundColor = 'rgba(247, 243, 205, 0.944)';
-                        overlay.style.display = 'none';    
-                    }, 2000); // 2 secnods
-            }
-        </script>
+            setTimeout(() => {
+                overlay.style.display = 'none';   
+                body.style.backgroundColor = 'rgba(247, 243, 205, 0.944)'; // Set to yellow background color
+                body.style.color = 'black'; // Set text color to black
+                mainContent.style.display = 'block'; 
+            }, 2000); // 2 seconds
+        }
+    </script>
 </body>
 </html>

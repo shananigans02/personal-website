@@ -1,77 +1,59 @@
 body {
     font-family: "monospace", Consolas, Monaco;
+    color: black;
     background-color: rgba(247, 243, 205, 0.944);
-    color:rgba(0, 0, 0, 0.836); 
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     transition: background 2s;
 }
+
 .profile {
     margin: 5px;
     text-align: left;
 }
+
 .profile hr {
     border: none;
-    border-top: 1px solid #000;
+    border-top: 1px solid black;
     margin: 8px 0;
 }
+
 .profile p {
     margin: 2px 0;
     line-height: 1.5;
 }
+
 .profile a {
-    color: rgb(17, 79, 23);
+    color: black;
     text-decoration: none;
 }
+
 .profile a:hover {
     text-decoration: underline;
 }
 
 /* pop-up overlay */
 #overlay {
-    /* stays same place even if pg is scrolled */
     position: fixed;
-    /* overlay covers entire screen */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* overlay background color */
     background: rgb(0, 0, 0);
-    /* txt color inside overlay */
     color: white;
-    /* center content inside overlay */
     display: flex;
-    /* center content horizontally and vertically */
     justify-content: center;
     align-items: center;
-     /* center txt */
     text-align: center;
-    /* ensure overlay appears above other content on pg */
     z-index: 1000;
-    transition: background 2s, opacity 2s;
+    transition: opacity 2s;
     opacity: 1;
 }
 
-#overlay .fade-out {
-    background: rgba(0, 0, 0, 0);
-    opacity: 0;
-}
-
-#overlay .fade-out-background {
-    background: rgba(247, 243, 205, 0.944); /* match the main content background color */
-}
-
-#overlay .fade-out-text {
-    animation: zoomOutFade 2s forwards;
-}
-
 #overlay button {
-    /* adds space above button */
     margin-top: 20px;
-    /* adds padding inside button */
     padding: 10px 20px;
     background-color: #ffffff;
     border: none;

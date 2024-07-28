@@ -7,10 +7,94 @@ body {
     align-items: center;
     margin: 0;
     transition: background 2s;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* For very small devices (phones, 320px and up) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .profile {
+        margin: 8px;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    .profile p, .profile a {
+        margin: 2px 0; 
+    }
+}
+
+/* For small devices (phones, 600px and up) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .profile {
+        margin: 10px; 
+    }
+
+    main {
+        padding: 5px; 
+    }
+
+    footer {
+        padding: 5px; 
+    }
+
+    .profile p, .profile a {
+        margin: 2px 0; 
+    }
+}
+
+/* For tablets (portrait mode, 768px and up) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; 
+    }
+
+    .profile {
+        margin: 12px; 
+    }
+
+    main {
+        padding: 8px;
+    }
+
+    footer {
+        padding: 8px; 
+    }
+
+    .profile p, .profile a {
+        margin: 4px 0;
+    }
+}
+
+main {
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+details + details {
+    margin-top: 30px;
 }
 
 .profile {
-    margin: 5px;
+    margin: 15px;
     text-align: left;
 }
 

@@ -2,11 +2,7 @@ body {
     font-family: "monospace", Consolas, Monaco;
     color: black;
     background-color: rgba(247, 243, 205, 0.944);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 0;
-    transition: background 2s;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -107,6 +103,9 @@ details + details {
 .profile p {
     margin: 2px 0;
     line-height: 1.5;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Display ellipsis for overflow text */
 }
 
 .profile a {

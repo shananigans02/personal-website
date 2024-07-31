@@ -97,7 +97,8 @@ details + details {
 
 .profile hr {
     border: none;
-    border-top: 1px solid black;
+    border-top: 1.5px solid black;
+
     margin: 8px 0;
 }
 
@@ -169,4 +170,8 @@ details + details {
 
 #mainContent.visible {
     opacity: 1;
+}
+
+a:hover {
+    color: rgba(82, 67, 19, 0.944);
 }
